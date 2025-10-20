@@ -1,0 +1,32 @@
+.list {
+  list-style: none;
+  padding: 0 1rem;
+  margin: 16px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.item {
+  flex: 1 1 calc(33.333% - 0.6rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .item {
+    flex: 1 1 calc(50% - 0.6rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    flex: 1 1 100%;
+  }
+}
